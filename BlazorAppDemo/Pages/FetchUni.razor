@@ -1,0 +1,35 @@
+﻿@page "/fetchUni"
+
+<h1>Universities of Norway</h1>
+
+
+@if (universities == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    var i = 1;
+    <table class="table">
+        <thead>
+            <tr> 
+                <th>Id</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>AlphaTwoCode</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var university in universities)
+            {
+                <tr>
+                    <td> @i </td>
+                    <td>@university.Name</td>
+                    <td>@university.Country</td>
+                    <td>@university.AlphaTwoCode</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+}

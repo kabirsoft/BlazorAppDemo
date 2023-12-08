@@ -1,0 +1,35 @@
+﻿@page "/country"
+
+<h1>Countries</h1>
+
+
+@if (countries == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    var i = 1;
+    <table class="table">
+        <thead>
+            <tr> 
+                <th>Id</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Emoji</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var country in countries)
+            {
+                <tr>
+                    <td> @i </td>
+                    <td>@country.Code</td>
+                    <td>@country.Name</td>
+                    <td>@country.Emoji</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+}

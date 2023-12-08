@@ -1,0 +1,12 @@
+--------------- run by editor VS ------
+build -> build solution
+debug -> start without debugging
+
+------------- run by console --------
+VS -> tools -> nuget package manager -> package manager console
+> cd BlazorAppDemo
+> dotnet run
+get https://localhost:7241 or http://localhost:5241
+
+note: use http for university load, http://localhost:5241
+

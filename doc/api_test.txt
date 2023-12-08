@@ -1,0 +1,9 @@
+http://universities.hipolabs.com/search?country=Norway  #get university by contry
+https://api.zippopotam.us/no/9008  #api/country/postcode #get place by postcode
+
+free api without key: https://apipheny.io/free-api/#apis-without-key
+
+graphQl:
+country based: https://studio.apollographql.com/public/countries/variant/current/explorer
+
+https://www.apollographql.com/blog/community/backend/8-free-to-use-graphql-apis-for-your-projects-and-demos/
